@@ -5,6 +5,8 @@
 
 Tennis Manager App is an Android mobile application developed in Kotlin, designed to provide users with access to ATP 500 tennis player data, match results, and highlights. The app integrates with a public API to fetch and display player statistics and allows users to create custom matches using ATP 500 players, storing them locally.
 
+<img src="https://github.com/CristiCP/Tennis-Manager/blob/main/Screenshot_Tennis_Manager.png" width="300px">
+
 ## Features
 
 - **Authentication System**: Secure login and authentication.
