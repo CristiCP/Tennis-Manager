@@ -28,7 +28,6 @@ Tennis Manager App is an Android mobile application developed in Kotlin, designe
 - **Glide**: Efficient image loading and caching.
 - **Coroutines**: For asynchronous programming and performance optimization.
 - **RecyclerView**: Displaying lists efficiently with ViewHolder pattern.
-- **Firebase Crashlytics**: To monitor and track app crashes.
 
 ## Installation
 
