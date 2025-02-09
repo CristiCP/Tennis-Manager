@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_marginStart">@dimen/margin_medium</item>
+        <item name="android:layout_marginEnd">@dimen/margin_medium</item>
+        <item name="android:textSize">@dimen/text_xlarge</item>
+        <item name="android:textColor">@color/md_theme_onSurface_highContrast</item>
+    </style>
+
+    <style name="CardViewDetails" parent="Widget.MaterialComponents.CardView">
+        <item name="android:layout_marginStart">@dimen/margin_small</item>
+        <item name="android:layout_marginEnd">@dimen/margin_small</item>
+        <item name="cardBackgroundColor">@color/md_theme_onPrimary</item>
+        <item name="cardCornerRadius">@dimen/corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+    </style>
+
+    <style name="RoundedView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">@dimen/corner_radius</item>
+    </style>
+
+    <style name="SearchViewTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlActivated">@color/md_theme_inverseOnSurface_highContrast</item>
+        <item name="colorControlNormal">@color/md_theme_inverseOnSurface_highContrast</item>
+        <item name="colorControlHighlight">@color/md_theme_inverseOnSurface_highContrast</item>
+        <item name="android:textColor">@color/md_theme_inverseOnSurface_highContrast</item>
+        <item name="android:editTextColor">@color/md_theme_inverseOnSurface_highContrast</item>
+        <item name="android:textColorHint">@color/md_theme_default</item>
+    </style>
+</resources>

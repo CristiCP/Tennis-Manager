@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CardViewDetails"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_very_small"
+    android:layout_marginBottom="@dimen/margin_very_small">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_small">
+
+        <ImageView
+            android:id="@+id/tournament_image_view"
+            android:layout_width="@dimen/icon_large"
+            android:layout_height="@dimen/icon_large"
+            app:layout_constraintBottom_toBottomOf="@id/surface_text_view"
+            app:layout_constraintEnd_toEndOf="@id/date_text_view"
+            app:layout_constraintStart_toStartOf="@id/date_text_view"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tournament_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/md_theme_onSurface_highContrast"
+            android:textSize="@dimen/text_small"
+            app:layout_constraintBottom_toTopOf="@id/surface_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/home_player_image_view"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/surface_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/md_theme_default"
+            android:textSize="@dimen/text_small"
+            app:layout_constraintBottom_toBottomOf="@id/tournament_image_view"
+            app:layout_constraintEnd_toEndOf="@id/tournament_text_view"
+            app:layout_constraintStart_toStartOf="@id/tournament_text_view"
+            app:layout_constraintTop_toBottomOf="@id/tournament_text_view" />
+
+        <TextView
+            android:id="@+id/date_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/md_theme_default"
+            android:textSize="@dimen/text_small"
+            app:layout_constraintBottom_toTopOf="@id/match_status_text_view"
+            app:layout_constraintEnd_toStartOf="@id/player_separator"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/home_player_image_view"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/match_status_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/match_status"
+            android:textColor="@color/md_theme_default"
+            android:textSize="@dimen/text_small"
+            app:layout_constraintBottom_toBottomOf="@id/away_player_image_view"
+            app:layout_constraintEnd_toEndOf="@id/date_text_view"
+            app:layout_constraintStart_toStartOf="@id/date_text_view"
+            app:layout_constraintTop_toBottomOf="@id/date_text_view" />
+
+        <View
+            android:id="@+id/player_separator"
+            android:layout_width="@dimen/separator_line"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/margin_small"
+            android:background="@color/md_theme_default"
+            app:layout_constraintBottom_toBottomOf="@id/away_player_image_view"
+            app:layout_constraintEnd_toStartOf="@id/home_player_image_view"
+            app:layout_constraintStart_toEndOf="@id/date_text_view"
+            app:layout_constraintTop_toTopOf="@id/home_player_image_view" />
+
+        <ImageView
+            android:id="@+id/home_player_image_view"
+            android:layout_width="@dimen/icon_medium"
+            android:layout_height="@dimen/icon_medium"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small"
+            app:layout_constraintStart_toEndOf="@id/player_separator"
+            app:layout_constraintTop_toBottomOf="@id/surface_text_view" />
+
+        <TextView
+            android:id="@+id/home_player_text_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/margin_very_small"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/md_theme_onSurface_highContrast"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintBottom_toBottomOf="@id/home_player_image_view"
+            app:layout_constraintEnd_toStartOf="@id/home_score_text_view"
+            app:layout_constraintStart_toEndOf="@id/home_player_image_view"
+            app:layout_constraintTop_toTopOf="@id/home_player_image_view" />
+
+        <ImageView
+            android:id="@+id/away_player_image_view"
+            android:layout_width="@dimen/icon_medium"
+            android:layout_height="@dimen/icon_medium"
+            android:layout_marginTop="@dimen/margin_players"
+            app:layout_constraintStart_toStartOf="@id/home_player_image_view"
+            app:layout_constraintTop_toBottomOf="@id/home_player_image_view" />
+
+        <TextView
+            android:id="@+id/away_player_text_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/margin_very_small"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/md_theme_onSurface_highContrast"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintBottom_toBottomOf="@id/away_player_image_view"
+            app:layout_constraintEnd_toStartOf="@id/away_score_text_view"
+            app:layout_constraintStart_toEndOf="@id/away_player_image_view"
+            app:layout_constraintTop_toTopOf="@id/away_player_image_view" />
+
+        <TextView
+            android:id="@+id/home_score_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_very_small"
+            android:textColor="@color/md_theme_onSurface_highContrast"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintBottom_toBottomOf="@id/home_player_image_view"
+            app:layout_constraintEnd_toStartOf="@id/score_separator"
+            app:layout_constraintStart_toEndOf="@id/home_player_text_view"
+            app:layout_constraintTop_toTopOf="@id/home_player_image_view" />
+
+        <TextView
+            android:id="@+id/away_score_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/md_theme_onSurface_highContrast"
+            android:textSize="@dimen/text_medium"
+            app:layout_constraintBottom_toBottomOf="@id/away_player_image_view"
+            app:layout_constraintEnd_toEndOf="@id/home_score_text_view"
+            app:layout_constraintStart_toStartOf="@id/home_score_text_view"
+            app:layout_constraintTop_toTopOf="@id/away_player_image_view" />
+
+        <View
+            android:id="@+id/score_separator"
+            android:layout_width="@dimen/separator_line"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:background="@color/md_theme_default"
+            app:layout_constraintBottom_toBottomOf="@id/away_score_text_view"
+            app:layout_constraintEnd_toStartOf="@id/match_result_text_view"
+            app:layout_constraintStart_toEndOf="@id/home_score_text_view"
+            app:layout_constraintTop_toTopOf="@id/home_score_text_view" />
+
+        <TextView
+            android:id="@+id/match_result_text_view"
+            android:layout_width="@dimen/circle_size"
+            android:layout_height="@dimen/circle_size"
+            android:background="@drawable/custom_circle_background"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_small"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/away_score_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/score_separator"
+            app:layout_constraintTop_toTopOf="@id/home_score_text_view" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  text  -->
+    <dimen name="text_very_small">10sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="text_xlarge">24sp</dimen>
+
+    <!--  icons  -->
+    <dimen name="icon_small">12dp</dimen>
+    <dimen name="icon_medium">24dp</dimen>
+    <dimen name="icon_large">36dp</dimen>
+    <dimen name="icon_xlarge">42dp</dimen>
+
+    <!--  margins  -->
+    <dimen name="margin_players">2dp</dimen>
+    <dimen name="margin_very_small">6dp</dimen>
+    <dimen name="margin_small">12dp</dimen>
+    <dimen name="margin_medium">24dp</dimen>
+    <dimen name="margin_high">30dp</dimen>
+    <dimen name="margin_large">36dp</dimen>
+    <dimen name="margin_xlarge">48dp</dimen>
+    <dimen name="margin_button">42dp</dimen>
+
+    <!--  padding  -->
+    <dimen name="padding_very_small">6dp</dimen>
+    <dimen name="padding_small">12dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+
+    <!--    loading  -->
+    <dimen name="loading_medium">48dp</dimen>
+    <dimen name="loading_large">92dp</dimen>
+
+    <!--  toolbar  -->
+    <dimen name="toolbar_height">48dp</dimen>
+
+    <!--  cardview  -->
+    <dimen name="corner_radius">16dp</dimen>
+    <dimen name="card_elevation">8dp</dimen>
+
+    <!--  circle  -->
+    <dimen name="circle_size">28dp</dimen>
+
+    <!--  width  -->
+    <dimen name="width_medium">32dp</dimen>
+
+    <!--  navigation  -->
+    <dimen name="height">48dp</dimen>
+
+    <!--  line  -->
+    <dimen name="separator_line">1dp</dimen>
+
+    <!--  button  -->
+    <dimen name="button_container">32dp</dimen>
+    <dimen name="button_image">16dp</dimen>
+</resources>

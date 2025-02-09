@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Broadcast</string>
+    <string name="custom_action">com.example.androidproject.CUSTOM_ACTION</string>
+    <string name="custom_send_permission">com.example.androidproject.SEND_PERMISSION</string>
+    <style name="Base.Theme.TestApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.TestApplication" parent="Base.Theme.TestApplication"/>
+</resources>

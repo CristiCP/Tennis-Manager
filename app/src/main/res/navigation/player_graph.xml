@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/player_graph"
+    app:startDestination="@id/players_page_fragment">
+
+    <fragment
+        android:id="@+id/players_page_fragment"
+        android:name="com.example.androidproject.ui.tennis.tennisplayers.TennisPlayersPageFragment"
+        tools:layout="@layout/fragment_players_page">
+        <action
+            android:id="@+id/navigation_main_to_details"
+            app:destination="@+id/player_details_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/player_details_fragment"
+        android:name="com.example.androidproject.ui.tennis.playercontentviewpager.TennisPlayerViewPagerFragment"
+        tools:layout="@layout/fragment_tennis_player_view_pager">
+        <argument
+            android:name="playerId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/navigation_details_to_main"
+            app:destination="@+id/players_page_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/custom_matches_fragment"
+        android:name="com.example.androidproject.ui.tennis.custommatches.CustomMatchesFragment"
+        tools:layout="@layout/fragment_custom_matches">
+        <action
+            android:id="@+id/navigate_matches_to_main"
+            app:destination="@+id/players_page_fragment" />
+        <action
+            android:id="@+id/navigate_matches_to_add_match"
+            app:destination="@+id/add_match_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/add_match_fragment"
+        android:name="com.example.androidproject.ui.tennis.custommatches.addcustommatch.AddCustomMatchFragment"
+        tools:layout="@layout/fragment_add_custom_match">
+        <action
+            android:id="@+id/navigate_add_match_to_matches"
+            app:destination="@+id/custom_matches_fragment" />
+    </fragment>
+</navigation>

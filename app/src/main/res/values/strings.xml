@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tennis Manager</string>
+
+    <!--  login/register text -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="logout">Logout</string>
+    <string name="back_to_login_page">Go Back To Login</string>
+    <string name="create_account">Create Your Account</string>
+    <string name="email">Email</string>
+    <string name="email_hint">Enter Your Email</string>
+    <string name="password">Password</string>
+    <string name="password_confirmation">Confirm Password</string>
+    <string name="password_hint">Enter Your Password</string>
+    <string name="account_confirmation">Confirm Your Account</string>
+
+    <!--  login/register validations  -->
+    <string name="email_invalid">Email is not valid!</string>
+    <string name="email_already_used">Email is already in use!</string>
+    <string name="password_invalid">Password is not valid!</string>
+    <string name="passwords_not_matching">Passwords are not matching!</string>
+    <string name="email_password_invalid">"Invalid email or password!"</string>
+    <string name="error_register_user">Register Error!</string>
+    <string name="auth_error">Authentication Error!</string>
+    <string name="account_valid">Account created successfully!</string>
+    <string name="login_loading_message">Loading you in… Please wait</string>
+    <string name="register_loading_message">Registering your account… Please wait</string>
+
+    <!--  player details  -->
+    <string name="player_content">PLAYER CONTENT</string>
+    <string name="player_details">Details</string>
+    <string name="full_name">Full Name</string>
+    <string name="profile">Profile</string>
+    <string name="country">Country</string>
+    <string name="place_of_birth">Place of Birth</string>
+    <string name="age">Age</string>
+    <string name="height">Height</string>
+    <string name="plays_with">Plays</string>
+    <string name="atp">ATP</string>
+    <string name="career_high">Career High</string>
+    <string name="current_rank">Current Rank</string>
+    <string name="previous">Previous</string>
+    <string name="prize">Prize Money</string>
+    <string name="this_year">This Year</string>
+    <string name="career_total">Career Total</string>
+    <string name="media">Media</string>
+    <string name="featured">Featured</string>
+
+    <!--  player content  -->
+    <string name="player_bar">Rank | Player</string>
+    <string name="points_bar">Points</string>
+    <string name="players_page">PLAYERS PAGE</string>
+
+    <!--  matches  -->
+    <string name="matches_page">MATCHES PAGE</string>
+    <string name="player_matches">Matches</string>
+    <string name="first_set">First Set</string>
+    <string name="second_set">Second Set</string>
+    <string name="third_set">Third Set</string>
+    <string name="win">W</string>
+    <string name="lose">L</string>
+    <string name="tournament_text">%1$s ▸ %2$s</string>
+    <string name="tournament_name">Tournament Name</string>
+    <string name="enter_tournament_name">Enter Tournament Name</string>
+    <string name="custom_match">Custom Match</string>
+    <string name="home_player">Home Player</string>
+    <string name="home_player_score">Home Player Score</string>
+    <string name="enter_home_player_score">Enter Home Player Score</string>
+    <string name="away_player">Away Player</string>
+    <string name="away_player_score">Away Player Score</string>
+    <string name="enter_away_player_score">Enter Away Player Score</string>
+    <string name="add_match">Add match</string>
+    <string name="select_player">Select player"</string>
+    <string name="unknown_ground">Unknown Ground</string>
+    <string name="unknown_tournament">Unknown Tournament</string>
+    <string name="custom_tournament_text">%s</string>
+    <string name="date_text">%s</string>
+    <string name="map">Map</string>
+    <string name="match_status">FT</string>
+
+    <!--  matches validations  -->
+    <string name="message_select_home_player">Please select a home player.</string>
+    <string name="message_select_away_player">Please select a away player.</string>
+    <string name="message_same_player">Home and away players cannot be the same.</string>
+    <string name="message_invalid_score">A valid match must have one player win at least two sets.</string>
+    <string name="message_empty_tournament">Tournament name cannot be empty.</string>
+    <string name="message_error_adding_match">Error adding custom match!</string>
+    <string name="match_added_successfully">Match added successfully!</string>
+
+    <!--  format  -->
+    <string name="millions_format">"%.2fM"</string>
+    <string name="thousands_format">%.1fK</string>
+
+    <!--  search bar  -->
+    <string name="search_player">Search Player</string>
+    <string name="clear_filter">Clear Filter</string>
+
+    <string name="go_back_to_players_list">Go Back To List</string>
+    <string name="zero_hint">0</string>
+    <string name="versus">-</string>
+    <string name="player_id">playerId</string>
+</resources>
